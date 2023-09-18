@@ -1,0 +1,114 @@
+/* Modal styles */
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height:80%;
+  max-width:80%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #40414f;
+  color: white;
+  border: 1px solid #343541;
+  border-radius: 10px;  /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Box shadow */
+}
+
+/* Input styles */
+.modal-content input,
+.modal-content textarea,
+.modal-content button {
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: #343541;
+  color: white;
+  border: none;
+  border-radius: 5px;  /* Rounded corners for inputs */
+}
+.descriptionTextarea {
+  height: 20%;
+  resize:none;
+}
+.rdrDateDisplay{
+  display:none;
+}
+.dateRangePicker{
+  margin-bottom:1%;
+}
+.dateRangePicker button{
+  width: 14%;
+  padding :0px 0px !important;
+}
+
+.searchBar{
+  background-color:white;
+  color:black;
+}
+/* Button styles */
+.modal-content button {
+  background-color: #343541;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;  /* Added padding for better appearance */
+}
+.bulkDeleteBtn:hover{
+  background-color:red;
+}
+/* Global styles */
+body {
+  background-color: #343541;
+  padding:50px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #40414f;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #40414f;
+}
+
+/* Input and Button styles */
+input, textarea, button {
+  margin-bottom: 10px;
+  background-color: #343541;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #40414f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: 2px solid #343541;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #4c4e5f;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
