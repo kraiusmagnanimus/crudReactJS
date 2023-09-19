@@ -1,5 +1,5 @@
-import React, { createContext, useState, useContext } from "react";
-import axios from "axios";
+import React, { createContext, useState, useContext } from 'react';
+import axios from 'axios';
 
 const ProjectsContext = createContext();
 
@@ -11,8 +11,7 @@ export const ProjectsProvider = ({ children }) => {
   const [projects, setProjects] = useState([]);
 
   const fetchProjects = () => {
-    axios
-      .get("https://lagueslo.com:2900/readProjects")
+    axios.get('https://lagueslo.com:3001/readProjects')
       .then((response) => {
         if (Array.isArray(response.data)) {
           setProjects(response.data);
